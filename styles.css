@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); 
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	color: #212529;
+	transition: .3s ease-in-out;
+}
+
+a {
+	color: #212529;
+}
+
+a:hover {
+	color: #E94949;
+	text-decoration: none;
+	transition: .2s ease-in-out;
+}
+
+p, a {
+	font-size: 1.25rem;
+}
+
+img {
+	opacity: 100%;
+}
+
+::-moz-selection { /* Code for Firefox */
+	color: #ffffff;
+	background: #E94949;
+  }
+  
+  ::selection {
+	color: #ffffff;
+	background: #E94949;
+  }
+
+.display-4 {
+	line-height: 1.1;
+}
+
+.display-3 {
+	line-height: 1;
+}
+
+/* Intro  */
+.intro {
+	z-index: 2;
+}
+
+.portrait {
+	padding: .5rem;
+}
+
+/* nav */
+
+.nav {
+	padding-left: 15px;
+}
+
+.nav a {
+	font-weight: 700;
+	font-size: 4.4rem;
+	line-height: 1.1;
+
+}
+
+.nav-link {
+	color: #212529;
+	display: inline-block;
+	padding: 0 .5rem;
+	margin-bottom: .6rem;
+}
+
+.nav-link:hover {
+	color: #ffffff;
+	background-color: #212529;
+	transition: .3s ease-in-out;
+  }
+
+.active {
+	color: #ffffff;
+	background-color: #212529;
+}
+
+/* Scroll to top button  */
+.back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #21252980;
+	cursor: pointer; 
+	padding: 0;
+	border-radius: 0;
+}
+
+.back-to-top:hover {
+	color: #212529;
+	transition: .2s ease-in-out;
+}
+
+.back-to-top:focus, .back-to-top__content:focus {
+	outline: none;
+}
+
+.back-to-top:focus > .back-to-top__content  {
+  color: #499CE9;
+} 
+
+/* Hero section  */
+.hero {
+	background-image: url(img/hero/who.svg);
+	background-size: 22rem;
+	background-repeat: no-repeat;
+	background-position: right 0px bottom -1px;
+}
+
+.what {
+	background-image: url(img/hero/what.svg);
+	background-size: 22rem;
+	background-repeat: no-repeat;
+	background-position: right 0px bottom -1px;
+}
+
+.work {
+	background-image: url(img/hero/work.svg);
+	background-size: 22rem;
+	background-repeat: no-repeat;
+	background-position: right 0px bottom -1px;
+}
+
+.background-red {
+	background-color: #E94949;
+}
+
+.background-green {
+	background-color: #18CB68;
+}
+
+.background-blue {
+	background-color: #499CE9;
+}
+
+/* Hero image  */
+.image-border {
+	border: 9px solid #ffffff; 
+}
+
+.margin-0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.padding {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* blockquote */
+.blockquote-footer {
+	color: #212529;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.blockquote-footer::before {
+	display: none;
+}
+
+.quote-image {
+	z-index: 1;
+	margin-top: -50px;
+	margin-left: -10px;
+}
+
+/* headings */
+.text-red {
+	color: #E94949;
+}
+
+.text-green {
+	color: #18CB68;
+}
+
+.text-blue {
+	color: #499CE9;
+}
+
+.lead {
+	font-size: 1.4rem;
+	line-height: .4;
+}
+
+/* images */
+.testimonial-image {
+	width: 6rem;
+    height: 6rem;
+}
+
+.client-logo {
+    width: 250px;
+}
+ footer {
+	 background-color: #F1F5F5;
+ }
+
+ footer p {
+	 margin-bottom: 0;
+ }
+footer li {
+	list-style: none;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer ul {
+	margin: 0;
+}
+
+.footer-text {
+	font-size: .9rem;
+	padding-top: .5rem;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 375px) {
+	.hero-image {
+		padding-bottom: 3.5rem;
+	}
+	.hero, .what, .work {
+		background-size: 26rem;
+	}
+}
+
+@media (min-width: 414px) {
+	.hero-image {
+		padding-bottom: 4rem;
+	}
+	.hero, .what, .work {
+		background-size: 28rem;
+	}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.hero-image {
+		padding-bottom: 9rem;
+	}
+	.hero, .what, .work {
+		background-size: 52rem;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.hero, .what, .work {
+		background-size: 60rem;
+	}
+ }
